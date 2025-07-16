@@ -6,7 +6,7 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-# Bapenada
+# Ich back mir nen Kakao
 {: .fs-9 }
 
 Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
@@ -27,6 +27,34 @@ Jekyll builds this Just the Docs theme docs website using the theme itself. Thes
 Browse the docs to learn more about how to use this theme.
 
 ## Getting started
+
+Here is some code that gave me trouble a second ago
+
+```csharp
+var timeSeries = tsm.TimeSeries.Create(
+     name,
+     interval,
+     cyclic: true,
+     FunctionType.StepRight(),
+     unitReference,
+     quotation: true,
+     preserveHistoricData: true,
+     preserveAuditLog: true //preserveAuditLog rot
+     );
+ var timeSeriesReference = await timeSeriesStore.Save(timeSeries);
+
+ var timeSeriesDataStore = await repository.GetTimeSeriesDataStore(timeSeriesReference);
+
+ var data = new List<ITimeSeriesData<double>>
+ {
+     tsm.TimeSeriesData.Create<double>(new DateTimeOffset(2025, 7, 1, 0, 0, 0, TimeSpan.Zero), 1.23D, Flag.Valid()),
+     tsm.TimeSeriesData.Create<double>(new DateTimeOffset(2025, 7, 1, 0, 15, 0, TimeSpan.Zero), 2.23D, Flag.Valid()),
+ };
+
+ var writingOptions = timeSeriesDataStore.WritingOptions.CreateQuotationOptions( //WritingOptions rot
+     quotationDateTime: new DateTimeOffset(2025, 6, 30, 0, 0, 0, TimeSpan.Zero),
+     historicDateTime: new DateTimeOffset(2025, 6, 29, 0, 0, 0, TimeSpan.Zero));
+```
 
 The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
 

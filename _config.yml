@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Just the Docs
-description: A Jekyll theme for documentation
+title: HAKOM Time Series 4x
+description: The official documentation of 4x
 baseurl: "/4xDoc" # the subpath of your site, e.g. /blog
 url: "https://lauchheit.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: 4xDoc # for github-metadata
